@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login - DeepDoc</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="form-box">
+            <a href="index.html" class="back-link">← Back to Home</a>
+            <h2>Login to DeepDoc</h2>
+            <form id="loginForm">
+                <input type="email" id="loginEmail" placeholder="Email" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button type="submit" class="btn btn-primary fullwidth">Login</button>
+            </form>
+            <div class="divider">or</div>
+            <button class="btn btn-google fullwidth" onclick="oauthLogin('google')">Continue with Google</button>
+            <button class="btn btn-github fullwidth" onclick="oauthLogin('github')">Continue with GitHub</button>
+            <p class="form-text">Don't have an account? <a href="signup.html">Signup</a></p>
+            <p id="loginError" class="error-message"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

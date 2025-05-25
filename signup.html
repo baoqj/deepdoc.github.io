@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Signup - DeepDoc</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="form-box">
+            <a href="index.html" class="back-link">← Back to Home</a>
+            <h2>Create your DeepDoc account</h2>
+            <form id="signupForm">
+                <input type="email" id="signupEmail" placeholder="Email" required>
+                <input type="password" id="signupPassword" placeholder="Password" minlength="6" required>
+                <button type="submit" class="btn btn-primary fullwidth">Sign Up</button>
+            </form>
+            <div class="divider">or</div>
+            <button class="btn btn-google fullwidth" onclick="oauthLogin('google')">Continue with Google</button>
+            <button class="btn btn-github fullwidth" onclick="oauthLogin('github')">Continue with GitHub</button>
+            <p class="form-text">Already have an account? <a href="login.html">Login</a></p>
+            <p id="signupError" class="error-message"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
